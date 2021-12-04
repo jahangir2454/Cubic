@@ -1,0 +1,1212 @@
+
+:root{
+  --maincolor:#F06807;
+  --heding:#fff;
+  --hedcolor:#353535;
+  --pcolor:#fff;
+  --topcolor:#eceff3;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,a,p,span{
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+}
+h5{
+  font-size: 26px;
+}
+h1{
+  font-size: 35px;  
+}
+p{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* ========================================= */
+    /* ===== top header nav css start ==== */
+/* ========================================= */
+
+
+  
+  /* HEADINGS */
+  
+  /* BASIC SETUP */
+  
+  .page-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-wrapper {
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  
+  .grad-bar {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+        -webkit-animation: gradbar 15s ease infinite;
+      -moz-animation: gradbar 15s ease infinite;
+      animation: gradbar 15s ease infinite;
+  }
+  
+  /* NAVIGATION */
+  
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .navbar img {
+    height: 16px;
+    width: auto;
+    justify-self: start;
+    margin-left: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-self: end;
+    
+  }
+  
+  .nav-item a {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+  }
+  
+  .nav-item a:hover {
+    color: #3498db;
+  }
+  
+  /* SECTIONS */
+  #banner{
+      background-position: center !important;
+      background-size: cover !important;
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat !important;
+      z-index: -1;
+  }
+  #banner .row,
+  #banner .container{
+    height: 100%;
+  }
+ 
+  .banner-items h2{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 6px;
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
+  .banner-items h3{
+    font-size: 90px;
+    color: #fff;
+    letter-spacing: 6px;
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
+  .banner-items a{
+    display: inline-block;
+    height: 50px;
+    width: 230px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .banner-items a:hover{
+    background: #fff;
+    color: #333;
+  }
+  .banner-items a span{
+    color: #fff;
+    margin-left: 15px;
+    transition: 0.5s;
+    font-weight: 900;
+  }
+  .banner-items a:hover span{
+    color: #F06807;
+  }
+  
+.arow{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1;
+  transform: translatey(-50%);
+}
+
+.arowr{
+ position: absolute;
+ right: 20px;
+ top: 50%;
+ transform: translatey(-50%);
+ z-index: 1;
+}
+
+.arow i,
+.arowr i{
+  font-size: 40px;
+  color: #fff;
+  font-weight: 200;
+}
+/* =================================================================================== */
+/* ========================================= */
+    /* ===== ARE css start ==== */
+/* ========================================= */
+#are{
+  background: #111;
+  padding: 80px 0;
+}
+.are-header span{
+  color: var(--maincolor);
+}
+.are-header{
+  position: relative;
+  color: var(--topcolor);
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+.are-header::after {
+  position: absolute;
+  content: "";
+  top: 140%;
+  left: 38%;
+  height: 1px;
+  width: 135px;
+  background: var(--maincolor);
+}
+.are-items{
+ border: 1px solid #333;
+ padding: 70px 0;
+ border-bottom: 1px solid var(--maincolor);
+ position: relative;
+}
+.are-items i{
+  font-size: 80px;
+  color: var(--maincolor);
+  margin-bottom: 10px;
+}
+.are-items h3{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.are-items h6{
+  font-size: 16px;
+  color: rgb(179, 176, 176);
+  font-weight: 400;
+}
+.overley{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--maincolor);
+  padding: 70px 15px 0 15px ;
+  transition: 0.5s;
+  opacity: 0;
+  transform-origin: bottom center;
+  transform: scaley(0);
+}
+.are-items:hover .overley{
+  opacity: 1;
+  transform: scaley(1);
+  z-index: 12;
+}
+.overley p{
+  font-size: 14px;
+  color: var(--pcolor);
+  line-height: 24px;
+}
+.btn-2 a{
+  display: inline-block;
+  height: 50px;
+  width: 180px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid var(--pcolor);
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.btn-2 a i{
+  margin-left: 10px;
+}
+.btn-2 a:hover{
+  background: #fff;
+  color: #333;
+}
+.btn-2 a:hover i{
+  color: #333;
+}
+.btn-2 i{
+  font-size: 18px;
+  color: #fff;
+}
+/* ========================================= */
+  /* ===== ARE css end ==== */
+/* ========================================= */
+
+/* ========================================= */
+  /* ===== group css start ==== */
+/* ========================================= */
+#group{
+  background: #222;
+}
+.group-items{
+  padding: 120px 100px 0  100px;
+} 
+.group-items h2{
+  color: var(--pcolor);
+  padding-bottom: 20px;
+}
+.group-items p{
+  color: #bbb;
+  padding-bottom: 55px;
+  line-height: 28px;
+}
+.group-items-2 h6{
+  color: #bbb;
+}
+.group-items-2 p{
+  font-size: 14px;
+  color: #bbb;
+  padding-top: 15px;
+}
+/* ========================================= */
+  /* ===== group css end ==== */
+/* ========================================= */
+
+
+/* ========================================= */
+  /* ===== video css start ==== */
+/* ========================================= */
+#video{
+  padding: 150px 0;
+}
+.video-items p{
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+}
+/* ========================================= */
+  /* ===== video css end ==== */
+/* ========================================= */
+
+/* ========================================= */
+  /* ===== team css start ==== */
+/* ========================================= */
+#team{
+  background: #111;
+  padding: 70px 0;
+}
+.team-imges{
+  position: relative;
+  overflow: hidden;
+}
+.team-imges img{
+  transition: 0.5s;
+}
+.team-imges:hover img{
+  transform: translatey(-50px);
+}
+.team-ite{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  padding: 20px 0 0 20px;
+  opacity: 0;
+  transform-origin: bottom center;
+  transition: 0.5s;
+  transform: scaley(0);
+}
+.team-imges:hover .team-ite{
+  opacity: 1;
+  transform: scaley(1);
+}
+.team-ite h3{
+  color: var(--pcolor);
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.team-ite h6{
+  color: var(--pcolor);
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.team-ite h6::after{
+  position: absolute;
+  content: "";
+  top: 69%;
+  left: 0;
+  width: 90px;
+  height: 1px;
+  background: #F06807;
+}
+.team-ite p{
+  color: var(--pcolor);
+  font-size: 13px;
+  padding-bottom: 25px;
+  line-height: 24px;
+}
+.team-ite a{
+  display: inline-block;
+  font-size: 16px;
+  color: var(--maincolor);
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.team-ite a:hover{
+  color: var(--pcolor);
+}
+/* ========================================= */
+  /* ===== team css end ==== */
+/* ========================================= */
+
+
+/* ========================================= */
+  /* ===== fun css start ==== */
+/* ========================================= */
+#fun{
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  padding: 100px 0 200px 0;
+}
+.fun-item i{
+  font-size: 70px;
+  color: var(--maincolor);
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+.fun-item:hover p,
+.fun-item:hover i{
+ color: var(--pcolor);
+}
+.fun-item h3{
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--pcolor);
+  padding-bottom: 10px;
+}
+.fun-item p{
+  color: var(--maincolor);
+  transition: 0.5s;
+}
+/* ========================================= */
+  /* ===== fun css end ==== */
+/* ========================================= */
+
+/* ========================================= */
+  /* ===== Services css start ==== */
+/* ========================================= */
+#services{
+  background: #111;
+  padding: 70px 0 0 0;
+}
+.services-icon i{
+  font-size: 60px;
+  color: var(--maincolor);
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.services-items h4{
+  color: var(--pcolor);
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.services-items p{
+  font-size: 14px;
+  color: #bbb;
+  line-height: 25px;
+}
+.services-hover:hover i{
+color: var(--pcolor);
+}
+.cubic{
+  padding: 30px 0 0 0 ;
+}
+/* ========================================= */
+  /* ===== Servicescss end ==== */
+/* ========================================= */
+
+/* ========================================= */
+  /* ===== skrill css start ==== */
+/* ========================================= */
+#skrill{
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  padding: 70px 0;
+}
+.progress{
+  margin: 15px 0;
+}
+.skrill-bar{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+}
+.progress-bar{
+  background: #F06807;
+}
+.progress{
+  height: 7px;
+  background: #000;
+}
+/* ========================================= */
+  /* ===== skrill css end ==== */
+/* ========================================= */
+
+
+/* ========================================= */
+  /* ===== works css start ==== */
+/* ========================================= */
+#works{
+  margin: 60px 0;
+}
+.works-header h5{
+  color: #333;
+}
+.works-item ul li{
+ display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.works-item ul li:hover{
+  background: #bbb;
+}
+
+.works-item ul .active{
+  background: var(--maincolor);
+  color: var(--pcolor);
+  transition: 0.5s;
+}
+.works-item ul .active:hover{
+  background: #F06807;
+}
+.works-img img{
+  transition: 0.5s;
+}
+.works-img:hover img{
+  transform: scale(1.3);
+}
+.works-img{
+  position: relative;
+  overflow: hidden;
+}
+.works-img:hover .works-img-items{
+  opacity: 1;
+}
+.work-another{
+  transition: 0.5s;
+}
+.works-img:hover .work-another{
+  transform: translatey(-90px);
+}
+.work-another{
+  position: absolute;
+  left: 115px;
+  bottom: 0;
+}
+.works-img-items{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f06807d8;
+  opacity: 0;
+  transition: 0.5s;
+}
+.works-img-items a i{
+  font-size: 25px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 20px;
+  margin: 8px;
+}
+.works-img-items h3{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.works-img-items p{
+  font-size: 15px;
+  color: #fff;
+}
+/* ========================================= */
+  /* ===== works css end ==== */
+/* ========================================= */
+
+/* ========================================= */
+  /* ===== Customer css start ==== */
+/* ========================================= */
+#customer{
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  padding: 90px 0;
+}
+.are-header h5{
+  text-transform: uppercase;
+}
+.costomer-items{
+  background: rgba(0,0,0,0.6);
+  padding: 20px 10px 20px 20px;
+  border-radius: 5px;
+  z-index: 10;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+  position: relative;
+}
+.costomer-items::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 6px solid #f06807d8;
+  border-radius: 5px;
+}
+.costomer-items i{
+  font-size: 16px;
+  color: var(--maincolor);
+  padding-bottom: 15px;
+}
+.costomer-items p{
+  font-size: 14px;
+  color: var(--pcolor);
+  line-height: 25px;
+}
+.costomer-name {
+  position: absolute;
+  bottom: -28%;
+  left: 0;
+  width: 100%;
+}
+.costomer-img img{
+  border-radius: 50%;
+}
+.costomer-name h4{
+  font-size: 18px;
+  color: var(--pcolor);
+  margin-top: 15px;
+}
+.costomer-name span{
+  font-size: 14px;
+  color: var(--pcolor);
+  margin-top: 15px;
+}
+#customer .slick-track{
+  margin: 50px 0;
+}
+.multiple-items .col{
+  padding: 0px 12.5px;
+}
+/* ========================================= */
+  /* ===== Customer css end ==== */
+/* ========================================= */
+
+
+/* ========================================= */
+  /* ===== blog css start ==== */
+/* ========================================= */
+#blog{
+  margin: 60px 0;
+}
+.blog-number h3{
+  background: #F06807;
+  padding: 13px 10px;
+  text-align: center;
+  color: var(--pcolor); 
+}
+.blog-number h5{
+  background: #333;
+  padding: 13px 10px;
+  text-align: center;
+  color: var(--pcolor); 
+  font-size: 16px;
+}
+.blog-item2 h6{
+  font-size: 20px;
+  font-weight: 400;
+  color: #F06807;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.blog-item2 h6:hover{
+  color: #1ab40c;
+}
+.blog-item2 p{
+  font-size: 14px;
+  color: #707070;
+  padding-bottom: 8px;
+}
+.blog-item2 a{
+  font-size: 14px;
+  display: block;
+  color: rgb(17, 17, 17);
+  font-weight: 800;
+}
+.blog-item2 span{
+  margin-left: 10px;
+  color: #F06807;
+  font-weight: 800;
+}
+.another-btn a{
+  display: inline-block;
+  height: 45px;
+  width: 230px;
+  text-align: center;
+  line-height: 45px;
+  border: 1px solid #333;
+  color: #333;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+.another-btn a:hover i{
+  color: #fff;
+}
+.another-btn a:hover{
+  background: #F06807;
+  border: 1px solid #F06807;
+  color: #fff;
+}
+.another-btn  i{
+  margin-left: 15px;
+  color: #F06807;
+  transition: 0.5s;
+}
+/* ========================================= */
+  /* ===== blog css end ==== */
+/* ========================================= */
+
+
+/* ========================================= */
+  /* ===== logo css start ==== */
+/* ========================================= */
+#logo{
+  background: #111;
+  padding: 60px 0;
+}
+/* ========================================= */
+  /* ===== logo css end ==== */
+/* ========================================= */
+
+
+/* ========================================= */
+  /* ===== contact css start ==== */
+/* ========================================= */
+#contact{
+  width: 100%;
+  padding: 70px 0;
+}
+.contact-item p{
+  font-size: 15px;
+  color: var(--pcolor);
+}
+.name input{
+  height: 50px;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.493);
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  color: #bbb;
+  padding: 0 10px;
+}
+.text-area textarea{
+  width: 100%;
+  height: 120px;
+  background: none;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.493);
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  color: #bbb;
+  padding: 10px 10px;
+}
+.contact-btn a{
+  display: inline-block;
+  height: 60px;
+  width: 210px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #bbb;
+  color: #bbb;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+.contact-btn a:hover{
+  background: #F06807;
+  color: #fff;
+  border: 1px solid #F06807;
+}
+.icon-conta i{
+font-size: 18px;
+color: #F06807;
+}
+.contac-item2 p{
+  color: #fff;
+}
+.contact-border{
+  position: relative;
+}
+.contact-border::after{
+  position: absolute;
+  content: "";
+  bottom: -18%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ border-bottom: 2px dotted #F06807;
+}
+#footer{
+  background: #111;
+  padding: 70px 0;
+}
+.footer-icon a{
+  margin: 0 6px;
+}
+.footer-icon a i{
+  display: inline-block;
+  padding: 15px  20px;
+  background: #F06807;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s;
+}
+.footer-icon a i:hover{
+  background: #fff;
+  color: #333;
+}
+.footer-item p{
+  font-size: 15px;
+  color: #bbb;
+}
+/* ========================================= */
+  /* ===== contact css end ==== */
+/* ========================================= */
+
+#scrollUp {
+  height: 50px;
+  width: 50px;
+  background: var(--maincolor);
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: var(--topcolor);
+  border-radius: 10px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================== */
+
+
+  /* SEARCH FUNCTION */
+  
+  #search-icon {
+    font-size: 0.9rem;
+    margin-top: 3px;
+    margin-left: 15px;
+    transition: color 0.3s ease-out;
+  }
+  
+  #search-icon:hover {
+    color: #3498db;
+    cursor: pointer;
+  }
+  
+  .search {
+    transform: translate(-35%);
+    -webkit-transform: translate(-35%);
+    transition: transform 0.7s ease-in-out;
+    color: #3498db;
+  }
+  
+  .no-search {
+    transform: translate(0);
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .search-input {
+    position: absolute;
+    top: -4px;
+    right: -125px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.6s ease;
+  }
+  
+  .search-active {
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  input {
+    border: 0;
+    border-left: 1px solid #ccc;
+    border-radius: 0; /* FOR SAFARI */
+    outline: 0;
+    padding: 5px;
+  }
+  
+  /* MOBILE MENU & ANIMATION */
+  
+  .menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #3f3f3f;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-toggle {
+    justify-self: end;
+    margin-right: 25px;
+    display: none;
+  }
+  
+  .menu-toggle:hover{
+    cursor: pointer;
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(1){
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #mobile-menu.is-active .bar:nth-child(3){
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* KEYFRAME ANIMATIONS */
+  
+  @-webkit-keyframes gradbar {
+      0% {
+          background-position: 0% 50%
+      }
+      50% {
+          background-position: 100% 50%
+      }
+      100% {
+          background-position: 0% 50%
+      }
+  }
+  
+  @-moz-keyframes gradbar {
+      0% {
+          background-position: 0% 50%
+      }
+      50% {
+          background-position: 100% 50%
+      }
+      100% {
+          background-position: 0% 50%
+      }
+  }
+  
+  @keyframes gradbar {
+      0% {
+          background-position: 0% 50%
+      }
+      50% {
+          background-position: 100% 50%
+      }
+      100% {
+          background-position: 0% 50%
+      }
+  }
+  
+  /* Media Queries */
+  
+    /* Mobile Devices - Phones/Tablets */
+  
+  @media only screen and (max-width: 720px) { 
+    .features {
+      flex-direction: column;
+      padding: 50px;
+    }
+    
+    /* MOBILE HEADINGS */
+    
+    h1 {
+      font-size: 1.9rem;
+    }
+    
+    h2 {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+    
+    /* MOBILE NAVIGATION */
+       
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      justify-content: start;
+      top: 55px;
+      background-color: #fff;
+      width: 100%;
+      height: calc(100vh - 55px);
+      transform: translate(-101%);
+      text-align: center;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    
+    .navbar li {
+      padding: 15px;
+    }
+    
+    .navbar li:first-child {
+      margin-top: 50px;
+    }
+    
+    .navbar li a {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+     
+    .menu-toggle, .bar {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .mobile-nav {
+    transform: translate(0%)!important;
+  }
+    
+    /* SECTIONS */
+    
+    .headline {
+      height: 20vh;
+    }
+      
+    .feature-container p {
+      margin-bottom: 25px;
+    }
+    
+    .feature-container {
+      margin-top: 20px;
+    }
+    
+    .feature-container:nth-child(2) {
+      order: -1;
+    }
+    
+    /* SEARCH DISABLED ON MOBILE */
+    
+    #search-icon {
+      display: none;
+    }
+    
+    .search-input {
+    display: none;
+   }
+    
+  }
+  /* ========================================================= */
+
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+    padding: 37px 100px;
+    display: none;
+    z-index: 30;
+  }
+  
+  .header.sticky {
+    padding: 7px 100px;
+    background: white;
+  }
+  
+  .header .logo {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.7s;
+  }
+  
+  .header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  
+  .header nav ul li {
+    position: relative;
+    list-style: none;
+    margin-top: -39px;
+  }
+  
+  .header nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700px;
+    transition: 0.7s;
+    text-transform: uppercase;
+  }
+  
+  .header nav ul li a:hover {
+    color: #F06807;
+  }
+  
+  .header.sticky .logo,
+  .header.sticky ul li a {
+    color: black;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 1000px;
+    background-position: center !important;
+    background-repeat: no-repeat  !important;
+    background-size: cover !important;
+  }
+
+  @media (max-width:768px){
+    .menu-bar{
+      display: block;
+      width: 100%;
+      margin: 10px;
+
+      cursor: pointer;
+      color: red;
+      font-size: 30px;
+    }
+    .menu-bar::before{
+      content:' \f0c9' ;
+      font-family: fontAwesome;
+      height: 100%;
+      width: 100%;
+    }
+    .menu-bar.activ::before{
+      content:' \f00d' ;
+ 
+  }
+  /* ================================================================= */
